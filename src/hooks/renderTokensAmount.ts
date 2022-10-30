@@ -22,6 +22,7 @@ export const useRenderTokensAmount = () => {
     contractInterface: CharityContractAbi,
     functionName: 'balanceOfBatch',
     args: [ids.map(() => address), ids],
+    watch: true,
     enabled,
     onSuccess: (data) => {
       const balances = [data[0] * 1e-18, ...data.slice(1)];
