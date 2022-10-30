@@ -24,7 +24,7 @@ export const App: FC = () => {
           largeScreen: 'full',
         }}
       />
-      <ToastContainer position='bottom-left' toastStyle={{ borderRadius: '1rem', zIndex: 1000 }} />
+      <ToastContainer position='bottom-left' toastStyle={{ borderRadius: '1rem' }} />
       {donationFormDiv != null && createPortal(<DonationForm />, donationFormDiv)}
     </>
   );
