@@ -14,7 +14,7 @@ const root = document.getElementById('walletConnectBlock');
 
 if (root != null) {
   const { chains, provider } = configureChains(
-    [chain.mainnet],
+    [chain.mainnet, chain.goerli],
     [
       jsonRpcProvider({
         rpc: () => ({ http: 'https://rpc.ankr.com/eth' }),

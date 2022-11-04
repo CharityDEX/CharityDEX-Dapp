@@ -1,7 +1,7 @@
 import { FC, useRef, useState } from 'react';
-import { toast } from 'react-toastify';
 
 import { BigNumber, ethers } from 'ethers';
+import { toast } from 'react-toastify';
 import { useAccount, useContractWrite, usePrepareContractWrite } from 'wagmi';
 
 import { CharityContractAbi, CharityContractAddress } from '../CharityContract';

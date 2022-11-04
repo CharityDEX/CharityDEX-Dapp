@@ -2,6 +2,7 @@
   "name": "tilda",
   "private": true,
   "version": "0.0.0",
+  "source": "index.html",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -10,10 +11,12 @@
   },
   "dependencies": {
     "@rainbow-me/rainbowkit": "^0.7.1",
+    "@uniswap/widgets": "link:../widget-with-charity",
     "buffer": "^6.0.3",
     "ethers": "^5.7.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-redux": "^8.0.4",
     "react-toastify": "^9.0.8",
     "wagmi": "^0.6.8"
   },
@@ -22,8 +25,12 @@
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
     "@vitejs/plugin-react": "^2.1.0",
+    "parcel": "^2.7.0",
     "prettier": "^2.7.1",
     "typescript": "^4.6.4",
     "vite": "^3.1.0"
+  },
+  "alias": {
+    "process": false
   }
 }

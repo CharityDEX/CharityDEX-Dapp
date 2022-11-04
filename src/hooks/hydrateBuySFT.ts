@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
-import { toast } from 'react-toastify';
 
+import { toast } from 'react-toastify';
 import { ConnectorNotFoundError, useContractWrite } from 'wagmi';
 
 import { CharityContractAbi, CharityContractAddress } from '../CharityContract';
