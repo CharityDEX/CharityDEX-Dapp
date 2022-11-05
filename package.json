@@ -10,8 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@ilmpc/charity-widget": "^1.0.0",
     "@rainbow-me/rainbowkit": "^0.7.1",
-    "@uniswap/widgets": "link:../widget-with-charity",
     "buffer": "^6.0.3",
     "ethers": "^5.7.1",
     "react": "^18.2.0",
