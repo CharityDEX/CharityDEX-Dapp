@@ -7,7 +7,7 @@ import give_well from '../assets/give_well.png';
 import water_project from '../assets/water_project.png';
 import wildfire from '../assets/wildfire.png';
 
-import classes from './Fonds.module.css';
+import * as classes from './Fonds.module.css';
 
 export const FOND_ADDRESSES = {
   Random: '',

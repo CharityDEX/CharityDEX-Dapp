@@ -8,11 +8,8 @@ import { jsonRpcProvider } from 'wagmi/providers/jsonRpc';
 
 import { App } from './App';
 import './index.css';
-import './polyfills';
 
-const root = document.getElementById('walletConnectBlock');
-
-if (root != null) {
+export const main = (root: HTMLDivElement) => {
   const { chains, provider } = configureChains(
     [chain.mainnet, chain.goerli],
     [
@@ -42,10 +39,10 @@ if (root != null) {
   ReactDOM.createRoot(root).render(
     <React.StrictMode>
       <WagmiConfig client={wagmiClient}>
-        <RainbowKitProvider chains={chains} theme={lightTheme({ accentColor: '#ff795d' })}>
+        <RainbowKitProvider chains={chains} initialChain={chain.mainnet} theme={lightTheme({ accentColor: '#ff795d' })}>
           <App />
         </RainbowKitProvider>
       </WagmiConfig>
     </React.StrictMode>,
   );
-}
+};

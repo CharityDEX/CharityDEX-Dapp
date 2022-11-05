@@ -29,7 +29,7 @@ export const useHydrateBuySFT = () => {
             success: 'SFT has been bought',
             error: {
               render: ({ data }) => {
-                if (/execution reverted: Not enough funds/i.test(data.message)) {
+                if (/execution reverted: Not enough funds/i.test((data as any).message)) {
                   return "Not enough 'Save The World' tokens";
                 }
                 if (data instanceof ConnectorNotFoundError) {

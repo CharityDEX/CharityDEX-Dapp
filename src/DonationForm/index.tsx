@@ -8,7 +8,7 @@ import { CharityContractAbi, CharityContractAddress } from '../CharityContract';
 
 import { FOND_ADDRESSES, Fonds } from './Fonds';
 import { Spinner } from './Spinner';
-import classes from './index.module.css';
+import * as classes from './index.module.css';
 
 export const DonationForm: FC = () => {
   const cardRef = useRef<HTMLDivElement>(null);
@@ -80,3 +80,5 @@ export const DonationForm: FC = () => {
     </div>
   );
 };
+
+export default DonationForm;
