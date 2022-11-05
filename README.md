@@ -18,7 +18,6 @@ pnpm build --base https://public-url.netlify.app/
 
 ```html
 <script type="module" crossorigin defer src="https://public-url.netlify.app/index.js"></script>
-<link rel="stylesheet" href="https://public-url.netlify.app/index.css" />
 ```
 
 ### Отображение кнопки Connect wallet
@@ -53,3 +52,13 @@ declare global {
 Приложение слушает событие **hashchange**.
 
 Для вызова покупкии необходимо нажать на якорную ссылку вида **#buy123**, где 123 - это id токена из контракта. Т.е. для подключения нового SFT достаточно добавить кнопку с **href="#buy1"** + добавить кнопку **connect wallet** на страницу.
+
+### Отображение виджета обмена
+
+Рендериться в блок с id **swapWidget**
+
+## Подключение виджета uniswap с изменениями
+
+Можно опубликовать виджет в npm или github packages
+
+В данный момент сделано второе с именем пакета **@ilmpc/charity-widget**. После публикации нужно будет заменить этот пакет на имя опубликованного.
