@@ -51,6 +51,7 @@ export const App: FC = () => {
               disableBranding
               hideConnectionUI
               provider={(provider as any) ?? null}
+              width='min(100vw, 380px)'
               theme={{
                 accent: '#ff795d',
                 fontFamily: 'Hanson, Arial, sans-serif',
