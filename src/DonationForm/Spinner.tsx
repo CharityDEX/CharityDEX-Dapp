@@ -1,4 +1,4 @@
-import * as classes from './Spinner.module.css';
+import classes from './Spinner.module.css';
 
 export const Spinner = () => (
   <div className={classes.ldsRipple}>

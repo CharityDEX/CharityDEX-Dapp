@@ -17,9 +17,9 @@ export const useHydrateBuySFT = () => {
 
   useEffect(() => {
     const handler = async () => {
-      if (location.hash === '') return;
+      if (window.location.hash === '') return;
 
-      const matchResult = location.hash.match(/#buy(\d+)/i);
+      const matchResult = window.location.hash.match(/#buy(\d+)/i);
       const id = Number(matchResult?.[1] ?? 0);
       try {
         if (id !== 0) {
@@ -41,11 +41,11 @@ export const useHydrateBuySFT = () => {
           });
         }
       } finally {
-        location.hash = '';
+        window.location.hash = '';
       }
     };
 
-    addEventListener('hashchange', handler);
-    return () => removeEventListener('hashchange', handler);
+    window.addEventListener('hashchange', handler);
+    return () => window.removeEventListener('hashchange', handler);
   }, [buy]);
 };

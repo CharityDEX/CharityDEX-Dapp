@@ -2,7 +2,9 @@
 
 ## Запуск
 
-Для управления зависимостями используется [pnpm](http://pnpm.io/). Для сборки Parcel
+Для управления зависимостями используется [pnpm](http://pnpm.io/).
+
+Перед билдом нужно установить PUBLIC_URL в .env.production на URL куда будет задеплоено приложение.
 
 ```bash
 pnpm install
@@ -17,7 +19,7 @@ pnpm build
 В настройках сайта в разделе "HTML-КОД ДЛЯ ВСТАВКИ ВНУТРЬ HEAD" добавить следующее:
 
 ```html
-<script type="module" crossorigin defer src="https://public-url.netlify.app/index.js"></script>
+<script type="module" crossorigin defer src="https://public-url.netlify.app/static/js/main.js"></script>
 ```
 
 ### Отображение кнопки Connect wallet

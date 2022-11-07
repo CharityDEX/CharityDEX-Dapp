@@ -34,5 +34,5 @@ export const useRenderTokensAmount = () => {
     if (!enabled) {
       window.renderTokensBalances?.(ids.map(() => 0));
     }
-  }, [address]);
+  }, [address, enabled, ids]);
 };

@@ -1,11 +1,13 @@
 import { FC, Suspense, lazy, useEffect, useState } from 'react';
 
+import { JsonRpcConnectionMap } from '@ilmpc/charity-widget';
 import { ConnectButton } from '@rainbow-me/rainbowkit';
 import { createPortal } from 'react-dom';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useAccount, useNetwork } from 'wagmi';
 
+import { chains } from './chains';
 import { useHydrateBuySFT } from './hooks/hydrateBuySFT';
 import { useRenderTokensAmount } from './hooks/renderTokensAmount';
 
@@ -15,12 +17,16 @@ const swapWidgetDiv = document.getElementById('swapWidget');
 const DonationForm = lazy(() => import('./DonationForm'));
 const SwapWidget = lazy(() => import('@ilmpc/charity-widget').then((module) => ({ default: module.SwapWidget })));
 
+const jsonRpcUrlMap = chains.reduce((acc, { id, rpcUrls }) => {
+  acc[id] = rpcUrls.default;
+  return acc;
+}, {} as JsonRpcConnectionMap);
+
 export const App: FC = () => {
   useRenderTokensAmount();
   useHydrateBuySFT();
 
   const { chain } = useNetwork();
-
   const { connector, isConnected } = useAccount();
   const [provider, setProvider] = useState();
   useEffect(() => {
@@ -51,6 +57,7 @@ export const App: FC = () => {
               disableBranding
               hideConnectionUI
               provider={(provider as any) ?? null}
+              jsonRpcUrlMap={jsonRpcUrlMap}
               width='min(100vw, 380px)'
               theme={{
                 accent: '#ff795d',

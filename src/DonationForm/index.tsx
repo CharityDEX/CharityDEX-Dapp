@@ -6,9 +6,9 @@ import { useAccount, useContractWrite, usePrepareContractWrite } from 'wagmi';
 
 import { CharityContractAbi, CharityContractAddress } from '../CharityContract';
 
-import { FOND_ADDRESSES, Fonds } from './Fonds';
+import { FOND_ADDRESSES, Fonds, FondsComponent } from './Fonds';
 import { Spinner } from './Spinner';
-import * as classes from './index.module.css';
+import classes from './index.module.css';
 
 export const DonationForm: FC = () => {
   const cardRef = useRef<HTMLDivElement>(null);
@@ -37,7 +37,7 @@ export const DonationForm: FC = () => {
   return (
     <div className={classes.card} ref={cardRef}>
       <h4 className={classes.header}>Charity List</h4>
-      <Fonds
+      <FondsComponent
         fond={fond}
         onFondChange={(e) => {
           setTimeout(() => {

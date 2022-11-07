@@ -7,7 +7,7 @@ import give_well from '../assets/give_well.png';
 import water_project from '../assets/water_project.png';
 import wildfire from '../assets/wildfire.png';
 
-import * as classes from './Fonds.module.css';
+import classes from './Fonds.module.css';
 
 export const FOND_ADDRESSES = {
   Random: '',
@@ -38,7 +38,7 @@ const FondDescription: FC<FondDescriptionProps> = ({ text, link, image }) => {
     <>
       <div className={classes.fondDescriptionText}>
         {text}
-        <a href={link?.url} target='_blank'>
+        <a href={link?.url} target='_blank' rel='noreferrer'>
           {link?.label}
         </a>
       </div>
@@ -66,7 +66,7 @@ const fondsDescriptions: Record<Fonds, ReactNode> = {
   ),
   'Water Project': (
     <FondDescription
-      text='The Water Project is a non-profit organisation that provides water projects to communities in Sub-Saharan Africa that are suffering unnecessarily due to a lack of clean water and good sanitation.'
+      text='The Water Project is a non-profit organization that provides water projects to communities in Sub-Saharan Africa that are suffering unnecessarily due to a lack of clean water and good sanitation.'
       link={{ url: 'https://thewaterproject.org/', label: 'Water Project' }}
       image={water_project}
     />
@@ -90,7 +90,7 @@ const fondsDescriptions: Record<Fonds, ReactNode> = {
   ),
   'Feed the Hungry': (
     <FondDescription
-      text='Feed the poor and hugry. Give children a chance to attend school and a brigther future, all with 20 cents per meal. These meals are delivered through our church partners. You can bring hope and faith to children worldwide!'
+      text='Feed the poor and hungry. Give children a chance to attend school and a brighter future, all with 20 cents per meal. These meals are delivered through our church partners. You can bring hope and faith to children worldwide!'
       link={{ url: 'https://www.feedthehungry.org/', label: 'Feed the Hungry' }}
       image={feed_hungry}
     />
@@ -109,7 +109,7 @@ interface FondsProps {
   onFondChange: (fond: Fonds) => void;
 }
 
-export const Fonds: FC<FondsProps> = ({ fond, onFondChange }) => {
+export const FondsComponent: FC<FondsProps> = ({ fond, onFondChange }) => {
   return (
     <div>
       <div className={classes.fondBtnContainer}>
