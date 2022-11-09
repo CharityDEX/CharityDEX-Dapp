@@ -8,7 +8,7 @@
     "eject": "react-scripts eject"
   },
   "dependencies": {
-    "@ilmpc/charity-widget": "^1.0.0",
+    "@max2204/widget-with-charity": "^1.0.0",
     "@rainbow-me/rainbowkit": "^0.7.1",
     "buffer": "^6.0.3",
     "ethers": "^5.7.1",

@@ -1,6 +1,6 @@
 import { FC, Suspense, lazy, useEffect, useState } from 'react';
 
-import { JsonRpcConnectionMap } from '@ilmpc/charity-widget';
+import type { JsonRpcConnectionMap } from '@max2204/widget-with-charity';
 import { ConnectButton } from '@rainbow-me/rainbowkit';
 import { createPortal } from 'react-dom';
 import { ToastContainer } from 'react-toastify';
@@ -15,7 +15,7 @@ const donationFormDiv = document.getElementById('donationForm');
 const swapWidgetDiv = document.getElementById('swapWidget');
 
 const DonationForm = lazy(() => import('./DonationForm'));
-const SwapWidget = lazy(() => import('@ilmpc/charity-widget').then((module) => ({ default: module.SwapWidget })));
+const SwapWidget = lazy(() => import('@max2204/widget-with-charity').then((module) => ({ default: module.SwapWidget })));
 
 const jsonRpcUrlMap = chains.reduce((acc, { id, rpcUrls }) => {
   acc[id] = rpcUrls.default;

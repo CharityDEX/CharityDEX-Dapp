@@ -4,7 +4,7 @@
 
 Для управления зависимостями используется [pnpm](http://pnpm.io/).
 
-Перед билдом нужно установить PUBLIC_URL в .env.production на URL куда будет задеплоено приложение.
+Перед билдом нужно установить PUBLIC_URL в настройках netlify (/settings/env#environment-variables) на URL куда будет задеплоено приложение.
 
 ```bash
 pnpm install

@@ -6,7 +6,7 @@ overrides:
   '@tanstack/react-query-persist-client': 4.13.4
 
 specifiers:
-  '@ilmpc/charity-widget': ^1.0.0
+  '@max2204/widget-with-charity': ^1.0.0
   '@parcel/config-default': ^2.7.0
   '@rainbow-me/rainbowkit': ^0.7.1
   '@trivago/prettier-plugin-sort-imports': ^3.3.0
@@ -25,7 +25,7 @@ specifiers:
   wagmi: ^0.6.8
 
 dependencies:
-  '@ilmpc/charity-widget': 1.0.0_trm6kpdbu5be363k4znfsdr5ya
+  '@max2204/widget-with-charity': 1.1.1_trm6kpdbu5be363k4znfsdr5ya
   '@rainbow-me/rainbowkit': 0.7.4_s4mppmlpt67mx56vwkrglkj2qq
   buffer: 6.0.3
   ethers: 5.7.2
@@ -2204,84 +2204,6 @@ packages:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
     dev: false
 
-  /@ilmpc/charity-widget/1.0.0_trm6kpdbu5be363k4znfsdr5ya:
-    resolution: {integrity: sha512-sE7xYMoR2b+3lWx99nRlOjn0EG5qeX2PhVQpKuQx/oeYyUr2Vr4OnBgD7KJ+P2aoGV2tEOyl6PCFeYVgFxSiNg==, tarball: download/@ilmpc/charity-widget/1.0.0/c1ac2b9c06a291a21be92673524e35970ce0ba9a}
-    peerDependencies:
-      ethers: ^5.6.1
-      react: '>=17.0.1'
-      react-dom: '>=17.0.1'
-      react-redux: '>=7.2.2'
-    dependencies:
-      '@babel/runtime': 7.20.1
-      '@fontsource/ibm-plex-mono': 4.5.12
-      '@fontsource/inter': 4.5.14
-      '@popperjs/core': 2.11.6
-      '@reduxjs/toolkit': 1.9.0_k4ae6lp43ej6mezo3ztvx6pykq
-      '@uniswap/redux-multicall': 1.1.6_ftcvhka4dmgnp35wtffnbcx3s4
-      '@uniswap/router-sdk': 1.4.0
-      '@uniswap/sdk-core': 3.1.0
-      '@uniswap/smart-order-router': 2.10.1_lvk2q3fhhtyekexl524fmg5x74
-      '@uniswap/token-lists': 1.0.0-beta.30
-      '@uniswap/v2-sdk': 3.0.1
-      '@uniswap/v3-sdk': 3.9.0
-      '@web3-react/core': 8.0.35-beta.0_jou6xypqafkcri7ouwkvxry7vq
-      '@web3-react/eip1193': 8.0.26-beta.0_immer@9.0.16+react@18.2.0
-      '@web3-react/empty': 8.0.20-beta.0_immer@9.0.16+react@18.2.0
-      '@web3-react/metamask': 8.0.28-beta.0_immer@9.0.16+react@18.2.0
-      '@web3-react/network': 8.0.27-beta.0_jou6xypqafkcri7ouwkvxry7vq
-      '@web3-react/types': 8.0.20-beta.0_immer@9.0.16+react@18.2.0
-      '@web3-react/url': 8.0.25-beta.0_jou6xypqafkcri7ouwkvxry7vq
-      '@web3-react/walletconnect': 8.0.35-beta.0_immer@9.0.16+react@18.2.0
-      ajv: 8.11.0
-      ajv-formats: 2.1.1
-      cids: 1.1.9
-      ethers: 5.7.2
-      immer: 9.0.16
-      jotai: 1.9.1_immer@9.0.16+react@18.2.0
-      jsbi: 3.2.5
-      make-plural: 7.1.0
-      ms.macro: 2.0.0
-      multicodec: 3.2.1
-      multihashes: 4.0.3
-      node-vibrant: 3.2.1-alpha.1
-      polished: 3.7.2
-      popper-max-size-modifier: 0.2.0_@popperjs+core@2.11.6
-      qrcode: 1.5.1
-      react: 18.2.0
-      react-dom: 18.2.0_react@18.2.0
-      react-feather: 2.0.10_react@18.2.0
-      react-popper: 2.3.0_r6q5zrenym2zg7je7hgi674bti
-      react-redux: 8.0.5_gqczyrwmhlwpr6z64d3xh3wv54
-      react-virtualized-auto-sizer: 1.0.7_biqbaboplfbrettd7655fr4n2y
-      react-window: 1.8.8_biqbaboplfbrettd7655fr4n2y
-      rebass: 4.0.7_react@18.2.0
-      redux: 4.2.0
-      setimmediate: 1.0.5
-      styled-components: 5.3.6_biqbaboplfbrettd7655fr4n2y
-      tiny-invariant: 1.3.1
-      wcag-contrast: 3.0.0
-      wicg-inert: 3.1.2
-    optionalDependencies:
-      bufferutil: 4.0.7
-      encoding: 0.1.13
-      utf-8-validate: 5.0.10
-    transitivePeerDependencies:
-      - '@babel/core'
-      - '@babel/template'
-      - '@ethersproject/abi'
-      - '@ethersproject/bignumber'
-      - '@ethersproject/contracts'
-      - '@walletconnect/ethereum-provider'
-      - debug
-      - hardhat
-      - jotai-tanstack-query
-      - jotai-urql
-      - optics-ts
-      - react-is
-      - valtio
-      - xstate
-    dev: false
-
   /@istanbuljs/load-nyc-config/1.1.0:
     resolution: {integrity: sha512-VjeHSlIzpv/NyD3N0YuHfXOPDIixcA1q2ZV98wsMqcYlPmv2n3Yb2lYP9XMElnaFVXg5A7YLTeLu6V84uQDjmQ==}
     engines: {node: '>=8'}
@@ -2765,6 +2687,84 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /@max2204/widget-with-charity/1.1.1_trm6kpdbu5be363k4znfsdr5ya:
+    resolution: {integrity: sha512-uAwp0B58d+1BMSr+91QWWbijxvUSvOWLQLvRdRtfpjGYpTaeZqmkMj4+yN3txLwoBat1LlUBeuodU90bN1Zewg==}
+    peerDependencies:
+      ethers: ^5.6.1
+      react: '>=17.0.1'
+      react-dom: '>=17.0.1'
+      react-redux: '>=7.2.2'
+    dependencies:
+      '@babel/runtime': 7.20.1
+      '@fontsource/ibm-plex-mono': 4.5.12
+      '@fontsource/inter': 4.5.14
+      '@popperjs/core': 2.11.6
+      '@reduxjs/toolkit': 1.9.0_k4ae6lp43ej6mezo3ztvx6pykq
+      '@uniswap/redux-multicall': 1.1.6_ftcvhka4dmgnp35wtffnbcx3s4
+      '@uniswap/router-sdk': 1.4.0
+      '@uniswap/sdk-core': 3.1.0
+      '@uniswap/smart-order-router': 2.10.1_lvk2q3fhhtyekexl524fmg5x74
+      '@uniswap/token-lists': 1.0.0-beta.30
+      '@uniswap/v2-sdk': 3.0.1
+      '@uniswap/v3-sdk': 3.9.0
+      '@web3-react/core': 8.0.35-beta.0_jou6xypqafkcri7ouwkvxry7vq
+      '@web3-react/eip1193': 8.0.26-beta.0_immer@9.0.16+react@18.2.0
+      '@web3-react/empty': 8.0.20-beta.0_immer@9.0.16+react@18.2.0
+      '@web3-react/metamask': 8.0.28-beta.0_immer@9.0.16+react@18.2.0
+      '@web3-react/network': 8.0.27-beta.0_jou6xypqafkcri7ouwkvxry7vq
+      '@web3-react/types': 8.0.20-beta.0_immer@9.0.16+react@18.2.0
+      '@web3-react/url': 8.0.25-beta.0_jou6xypqafkcri7ouwkvxry7vq
+      '@web3-react/walletconnect': 8.0.35-beta.0_immer@9.0.16+react@18.2.0
+      ajv: 8.11.0
+      ajv-formats: 2.1.1
+      cids: 1.1.9
+      ethers: 5.7.2
+      immer: 9.0.16
+      jotai: 1.9.1_immer@9.0.16+react@18.2.0
+      jsbi: 3.2.5
+      make-plural: 7.1.0
+      ms.macro: 2.0.0
+      multicodec: 3.2.1
+      multihashes: 4.0.3
+      node-vibrant: 3.2.1-alpha.1
+      polished: 3.7.2
+      popper-max-size-modifier: 0.2.0_@popperjs+core@2.11.6
+      qrcode: 1.5.1
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+      react-feather: 2.0.10_react@18.2.0
+      react-popper: 2.3.0_r6q5zrenym2zg7je7hgi674bti
+      react-redux: 8.0.5_gqczyrwmhlwpr6z64d3xh3wv54
+      react-virtualized-auto-sizer: 1.0.7_biqbaboplfbrettd7655fr4n2y
+      react-window: 1.8.8_biqbaboplfbrettd7655fr4n2y
+      rebass: 4.0.7_react@18.2.0
+      redux: 4.2.0
+      setimmediate: 1.0.5
+      styled-components: 5.3.6_biqbaboplfbrettd7655fr4n2y
+      tiny-invariant: 1.3.1
+      wcag-contrast: 3.0.0
+      wicg-inert: 3.1.2
+    optionalDependencies:
+      bufferutil: 4.0.7
+      encoding: 0.1.13
+      utf-8-validate: 5.0.10
+    transitivePeerDependencies:
+      - '@babel/core'
+      - '@babel/template'
+      - '@ethersproject/abi'
+      - '@ethersproject/bignumber'
+      - '@ethersproject/contracts'
+      - '@walletconnect/ethereum-provider'
+      - debug
+      - hardhat
+      - jotai-tanstack-query
+      - jotai-urql
+      - optics-ts
+      - react-is
+      - valtio
+      - xstate
+    dev: false
 
   /@metamask/detect-provider/1.2.0:
     resolution: {integrity: sha512-ocA76vt+8D0thgXZ7LxFPyqw3H7988qblgzddTDA6B8a/yU0uKV42QR/DhA+Jh11rJjxW0jKvwb5htA6krNZDQ==}

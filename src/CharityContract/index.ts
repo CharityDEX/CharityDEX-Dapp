@@ -1,4 +1,4 @@
-export const CharityContractAddress = '0xcc59f4e1abe6859f860ef9fc15e465de3bf994ca';
+export const CharityContractAddress = '0xE2E26a93f51944176E867cD608D4A0278d897Af1';
 export const CharityContractAbi = [
   {
     inputs: [
