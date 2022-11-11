@@ -61,7 +61,7 @@ export const App: FC = () => {
               width='min(100vw, 380px)'
               theme={{
                 primary: '#FFF',
-                seconary: '#f2edff',
+                module: '#f2edff',
                 accent: '#ff795d',
                 fontFamily: 'Hanson, Arial, sans-serif',
                 borderRadius: 1,
