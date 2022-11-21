@@ -60,15 +60,13 @@ export const App: FC = () => {
               jsonRpcUrlMap={jsonRpcUrlMap}
               width='min(100vw, 380px)'
               theme={{
-                primary: '#000742',
-                secondary: '#877F9D',
-                container: '#FFFFFF',
-                interactive: '#FFFFFF',
-                module: '#FF795D',
-                dialog: '#FFFFFF',
+                primary: '#FFF',
+                container: '#FFF',
+                module: '#f2edff',
+                dialog: '#FFF',
                 outline: '#7b5ec7',
-                accent: '#FFFFFF',
-                fontFamily: 'Inter',
+                accent: '#ff795d',
+                fontFamily: 'Hanson, Arial, sans-serif',
                 borderRadius: 1,
               }}
             />,
