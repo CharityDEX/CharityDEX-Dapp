@@ -63,7 +63,7 @@ export const App: FC = () => {
                 primary: '#000742',
                 secondary: '#877F9D',
                 container: '#FFFFFF',
-                interactive: FFFFFF
+                interactive: '#FFFFFF',
                 module: '#FF795D',
                 dialog: '#FFFFFF',
                 outline: '#7b5ec7',
