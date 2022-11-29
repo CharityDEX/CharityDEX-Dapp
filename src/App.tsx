@@ -58,7 +58,7 @@ export const App: FC = () => {
               hideConnectionUI
               provider={(provider as any) ?? null}
               jsonRpcUrlMap={jsonRpcUrlMap}
-              width='min(100vw, 380px)'
+              width='min(100vw, 500px)'
               theme={{
                 primary: '#000742',
                 secondary: '#877F9D',
