@@ -62,6 +62,7 @@ export const App: FC = () => {
               theme={{
                 primary: '#000742',
                 secondary: '#877F9D',
+                interactive: '#FFF',
                 container: '#FFF',
                 module: '#f2edff',
                 dialog: '#FFF',
