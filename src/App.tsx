@@ -59,7 +59,7 @@ export const App: FC = () => {
               provider={(provider as any) ?? null}
               jsonRpcUrlMap={jsonRpcUrlMap}
               width='min(100vw, 500px)'
-              height='min(100vw, 550px)'
+              height='min(100vh, 550px)'
               theme={{
                 primary: '#000742',
                 secondary: '#877F9D',
